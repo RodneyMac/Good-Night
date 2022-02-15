@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&family=Montserrat:wght@100;200;300;400;600&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;700&family=Source+Code+Pro:ital,wght@0,200;0,400;0,700;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kite One", sans-serif;
+}
+
+body {
+    background-image: url(img/stars.gif);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: cyan;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    font-size: 3em;
+}
+
+.btn {
+    display: none;
+    position: absolute;
+}
+
+.boton {
+    height: 200px;
+    width: 200px;
+    --webkit-appearance: none;
+    box-shadow: inset -2px -2px 8px #fff,
+    inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+    color: #15e38a;
+    background-color: #ececec;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 8px solid #ececec;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn:checked ~ .boton {
+    color: #7a7a7a;
+    font-size: 50px;
+    background-color: #ececec;
+    box-shadow: 
+    10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.modal {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    display: none;
+    cursor: pointer;
+}
